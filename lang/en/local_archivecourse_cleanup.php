@@ -22,13 +22,15 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname']   = 'Archive Course Cleanup Utility';
-$string['frankenname']  = 'local_archivecourse_cleanup';
-$string['settings']     = 'Cleanup Settings';
-$string['num_days']     = "Days";
-$string['num_days_desc']= "Number of days to keep courses";
-$string['unknown_err']  = 'UNKNOWN ERROR: Delete failed for courseid {$a}';
-$string['donothing']    = 'Nothing to do!';
-$string['deletesuccess']= 'Successsfully deleted {$a} old courses';
-$string['noconfirm']    = 'Failed to delete courseid {$a->id} - {$a->fullname}';
-$string['catchall_err'] = 'Something went wrong.';
+$string['pluginname']       = 'Archive Course Cleanup Utility';
+$string['frankenname']      = 'local_archivecourse_cleanup';
+$string['settings']         = 'Cleanup Settings';
+$string['num_days']         = "Days";
+$string['num_days_desc']    = "Number of days to keep courses";
+$string['unknown_err']      = 'UNKNOWN ERROR: Delete failed for courseid {$a}';
+$string['donothing']        = 'Nothing to do!';
+$string['deletesuccess']    = 'Successsfully deleted {$a} old courses';
+$string['noconfirm']        = 'Failed to delete courseid {$a->id} - {$a->fullname}';
+$string['catchall_err']     = 'Something went wrong.';
+$string['cron_enable']      = 'Cron';
+$string['cron_enable_desc'] = "Should this plugin run at cron and delete all courses older than the Number of Days specified above?";

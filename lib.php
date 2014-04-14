@@ -34,6 +34,10 @@ require_once $CFG->libdir.'/moodlelib.php';
  */
 function local_archivecourse_cleanup_cron(){
 
+    if(get_config('local_archivecourse_cleanup', 'cron_enable') == 0){
+        return;
+    }
+
     $cleanup    = new cleanup();
     $threshold  = get_config('local_archivecourse_cleanup', 'num_days');
     $courseids  = $cleanup->get_old_courseids($threshold);

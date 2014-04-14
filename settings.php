@@ -34,6 +34,8 @@ if ($hassiteconfig) {
 
     $settings->add(
             new admin_setting_configtext('local_archivecourse_cleanup/num_days', $_s('num_days'), $_s('num_days_desc'), 7, PARAM_INT, 3));
+    $settings->add(
+            new admin_setting_configcheckbox('local_archivecourse_cleanup/cron_enable', $_s('cron_enable'), $_s('cron_enable_desc'), 0));
 
     $ADMIN->add('localplugins', $settings);
 }
